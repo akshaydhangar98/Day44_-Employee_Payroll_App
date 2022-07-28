@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="Emp_Payroll.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Payroll App</title>
+  <link rel="stylesheet" href="Emp_Payroll.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <script src="employee_payroll_data.js"></script>
+</head>
+
+<body>
+
+  <!-- UC 1 -->
+  <header class="header">
+    <div class="logo-content">
+      <img src="logo.PNG" alt="logo">
+      <div>
+        <span class="emp-text">EMPLOYEE</span><br />
+        <span class="emp-text emp-payroll">PAYROLL</span>
+      </div>
+    </div>
+  </header>
+  <div class="form-content">
+    <form class="form" action="#" onsubmit="save(event);return false">
+
+      <!-- UC 2 -->
+      <div class="form-head">Employee Payroll form</div>
+      <div class="row-content">
+        <label class="label text" for="name">Name</label>
+        <input class="input" type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+
+      <!-- UC 3 -->
+      <div class="row-content">
+        <label class="label text" for="profile">Profile image</label>
+        <div class="profile-radio-content">
+          <label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+            value="option1">
+        <label class="form-check-label" for="inlineRadio1"><img src="Akshay.jpg" alt="myImage" height="60" width="60"></label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+            value="option2">
+        <label class="form-check-label" for="inlineRadio2"><img src="Santosh.webp" alt="myImage" height="60" width="60"></label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+            value="option3">
+        <label class="form-check-label" for="inlineRadio3"><img src="Kunal.jpeg" alt="myImage" height="60" width="60"></label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+            value="option3">
+        <label class="form-check-label" for="inlineRadio3"><img src="Sachin.jpeg" alt="myImage" height="60" width="60"></label>
+          </label>
+        </div>
+      </div>
+
+      <!-- UC 4 -->
+      <div class="row-content">
+        <label class="label text" for="gender">Gender</label>
+        <div>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label class="text" for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label class="text" for="female">Female</label>
+        </div>
+      </div>
+      <div class="row-content">
+        <label class="label text" for="department">Department</label>
+        <div>
+          <input class="checkbox" type="checkbox" name="hr" id="hr" value="HR" />
+          <label class="text" for="hr">HR</label>
+          <input class="checkbox" type="checkbox" name="sales" id="sales" value="Sales" />
+          <label class="text" for="hr">Sales</label>
+          <input class="checkbox" type="checkbox" name="finance" id="finance" value="Finance" />
+          <label class="text" for="hr">Finance</label>
+          <input class="checkbox" type="checkbox" name="engineer" id="engineer" value="Engineer" />
+          <label class="text" for="hr">Engineer</label>
+          <input class="checkbox" type="checkbox" name="others" id="others" value="Others" />
+          <label class="text" for="hr">Others</label>
+        </div>
+      </div>
+
+      <div class="row-content">
+        <label class="label text" for="salary">Choose your salary: </label>
+        <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000"
+          required />
+        <output class="salary-output" for="salary">400000</output>
+      </div>
+
+      <!-- UC 5 -->
+      <div class="row-content">
+        <label class="label text" for="startDate">Start Date</label>
+        <input class="input" type="date" placeholder="Enter date and time" id="party" name="bday" required />
+      </div>
+
+      <!-- UC 6 -->
+      <div class="row-content">
+        <label class="label text" for="notes">Notes</label>
+        <textarea class="input" name="Notes" id="notes" placeholder="Write notes here" style="height: 100px"
+          required></textarea>
+      </div>
+      <div class="buttonParent">
+        <a href="./payroll_form.html" class="resetButton button cancelButton">Cancel</a>
+        <div class="submit-reset">
+          <button type="submit" class="button submitButton" id="submitButton">
+            Submit
+          </button>
+          <button type="reset" class="resetButton button">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  </form>
+  </div>
+
+</body>
+
+</html>
